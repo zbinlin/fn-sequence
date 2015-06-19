@@ -200,5 +200,27 @@ void function testLibSequence() {
             });
         });
 
+        it("如果数组里包含非函数及对象时，该元素会作为值传递到下一个函数里", function (done) {
+            var arr = [
+                function (value, next) {
+                    next(null, value);
+                },
+                100,
+                function (value, next) {
+                    next(null, value);
+                },
+                123
+            ];
+
+            sequence(arr, function (err, val) {
+                try {
+                    assert.equal(val, 123);
+                    done();
+                } catch (ex) {
+                    done(ex);
+                }
+            });
+        });
+
     });
 }();

@@ -28,7 +28,7 @@ sequence([
             next(null, "bar");
         }
     }
-]), 100, function (val) {
+]), 100, function (err, val) {
     console.log(val); // "foo"
 });
 ```
