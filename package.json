@@ -1,6 +1,6 @@
 {
   "name": "fn-sequence",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "function sequence",
   "main": "index.js",
   "scripts": {
