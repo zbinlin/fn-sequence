@@ -1,0 +1,22 @@
+{
+  "name": "fn-sequence",
+  "version": "1.0.0",
+  "description": "function sequence",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/test-index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zbinlin/fn-sequence.git"
+  },
+  "keywords": [
+    "sequence"
+  ],
+  "author": "zbinlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zbinlin/fn-sequence/issues"
+  },
+  "homepage": "https://github.com/zbinlin/fn-sequence#readme"
+}
